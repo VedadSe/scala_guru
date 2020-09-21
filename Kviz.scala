@@ -44,7 +44,7 @@ object Kviz {
 
     }
 
-    if (setPitanja.size == 0) println("\nCestitamo! Uspjesno ste odgovorili na sva pitanja!")
+    print("\nCestitamo! Uspjesno ste odgovorili na sva pitanja!")
 
   }
 
