@@ -16,7 +16,7 @@ object Kviz {
 
     while (setPitanja.size > 0) {
 
-      print("\nZamoljeni ste da unesete broj pitanja ->" + setPitanja.keys.mkString.replace("", " ") + ": ")
+      print("\nZamoljeni ste da unesete broj pitanja ->" + setPitanja.keys.mkString.toSeq.sortBy(kv => kv.unary_+).toString().replace("", " ") + ": ")
 
       var redniBrojPitanja: Int = scala.io.StdIn.readInt()
 
